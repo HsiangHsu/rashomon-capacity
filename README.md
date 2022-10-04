@@ -3,3 +3,6 @@ The official code of Rashomon Capacity: A Metric for Predictive Multiplicity in 
 
 ## Quick Start
 ### 1. Requirements
+'''
+conda create --name <your_env_name> --file requirements.txt
+'''
