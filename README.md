@@ -66,6 +66,9 @@ $ ./train_cub200.sh
 
 ## Reference
 [1] Lichman, M. (2013). UCI machine learning repository.
+
 [2] Angwin, J., Larson, J., Mattu, S., and Kirchner, L. (2016). Machine bias. ProPublica.
+
 [3] Ingels, S. J., Pratt, D. J., Herget, D. R., Burns, L. J., Dever, J. A., Ottem, R., Rogers, J. E., Jin, Y., and Leinwand, S. (2011). High school longitudinal study of 2009 (hsls: 09): Base-year data file documentation. nces 2011-328. National Center for Education Statistics.
+
 [4] Krizhevsky, A., Hinton, G., et al. (2009). Learning multiple layers of features from tiny images (technical report). University of Toronto.
