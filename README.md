@@ -8,16 +8,21 @@ $ conda create --name <your_env_name> --file requirements.txt
 ```
 
 ### 2. Prepare Datasets
-1) Download datasets (UCI Adult[1], COMPAS[2], HSLS[3], CIFAR-10[4]) from [[this google drive link]](https://drive.google.com/file/d/19UaTcjGYj8YUBlj69mPK7zcVvFUR8bso/view?usp=sharing)
-2) Locate downloaded datasets to './data' directory
+1) The './data' directory contains UCI Adult[1], COMPAS[2], and HSLS[3] (missing values imputed by knn) datasets. 
+2) Locate downloaded datasets to './data' directory CIFAR-10[4]
 
 ```
 ./data
-      /Permuted_Omniglot_task50.pt
-      /binary_split_cub200_new
-      /binary_split_cifar100
-      /binary_cifar10
-      /binary_omniglot
+      /UCI-Adult
+      	/adult.csv
+	/adult.data
+	/adult.names
+	/adult.test
+      /COMPAS
+      	/compas-scores-two-years.csv
+      /HSLS
+      	/hsls_df_knn_impute_past_v2.pkl
+      /cifar10/
 ```
 
 ### 3.  Run .sh file
@@ -38,19 +43,6 @@ $ ./train_omniglot.sh
 ```
 $ ./train_cub200.sh
 ```
-
-### 3.  Analyze experimental results
-
-1) Check './result_analysis_code/'. There are example ipython files to anayze the experimental results of [EWC, MAS, SI, Rwalk, AGS-CL] with or without CPR in CIFAR100. Note that the analysis results are for experiments conducted on only single seed.
-
-2) You can easily transform and use these files to analyze other results!
-
-
-## QnA
-### 1. How to apply CPR to another CL algorithm?
-
-: The implementation for CPR is quite simple. As shown in Equation (3) of the paper, you can implement CPR by maximizing an entropy of a model's softmax output (in other words, minimizing KL divergence between the model's softmax output and uniform distribution). Note that a lambda (the hyperparameter for entropy maximization) should be selected carefully. As an example, check Line 222 at './approaches/ewc_cpr.py'.
-
 
 ## Citation
 ```
