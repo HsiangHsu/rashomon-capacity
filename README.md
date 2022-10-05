@@ -13,16 +13,16 @@ $ conda create --name <your_env_name> --file requirements.txt
 
 ```
 ./data
-      /UCI-Adult
-      	/adult.csv
-	/adult.data
-	/adult.names
-	/adult.test
+	/UCI-Adult
+      		/adult.csv
+		/adult.data
+		/adult.names
+		/adult.test
       /COMPAS
-      	/compas-scores-two-years.csv
+      		/compas-scores-two-years.csv
       /HSLS
-      	/hsls_df_knn_impute_past_v2.pkl
-      /cifar10/
+      		/hsls_df_knn_impute_past_v2.pkl
+      /cifar10
 ```
 
 ### 3.  Run .sh file
@@ -36,12 +36,6 @@ $ ./train_cifar.sh
 
 ```
 $ ./train_omniglot.sh
-```
-
-#### 3-3) Train 'CUB200' scenario using \[EWC, SI, MAS, Rwalk, AGS-CL\] with and without CPR
-
-```
-$ ./train_cub200.sh
 ```
 
 ## Citation
