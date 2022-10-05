@@ -5,11 +5,12 @@ The official code of Rashomon Capacity: A Metric for Predictive Multiplicity in 
 ### 1. Requirements
 ```
 $ conda create --name <your_env_name> --file requirements.txt
+$ source activate <your_env_name>
 ```
 
 ### 2. Prepare Datasets
 1) The './data' directory contains UCI Adult[1], COMPAS[2], and HSLS[3] (missing values imputed by knn) datasets. 
-2) Locate downloaded datasets to './data' directory CIFAR-10[4]
+2) The function `load_cifar10()` will load CIFAR-10[4] into the './data/cifar10/' directory.
 
 ```
 ./data
