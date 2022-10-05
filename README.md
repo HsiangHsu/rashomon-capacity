@@ -13,16 +13,16 @@ $ conda create --name <your_env_name> --file requirements.txt
 
 ```
 ./data
-	/UCI-Adult
-      		/adult.csv
-		/adult.data
-		/adult.names
-		/adult.test
-      /COMPAS
-      		/compas-scores-two-years.csv
-      /HSLS
-      		/hsls_df_knn_impute_past_v2.pkl
-      /cifar10
+    /UCI-Adult
+        /adult.csv
+        /adult.data
+        /adult.names
+        /adult.test
+    /COMPAS
+        /compas-scores-two-years.csv
+    /HSLS
+        /hsls_df_knn_impute_past_v2.pkl
+    /cifar10
 ```
 
 ### 3.  Run .sh file
